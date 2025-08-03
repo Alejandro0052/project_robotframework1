@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.9.12 on win32)" generated="2025-07-27T18:53:41.156927" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.9.12 on win32)" generated="2025-08-02T23:53:57.878834" rpa="false" schemaversion="5">
 <suite id="s1" name="Registrosdatos" source="C:\Users\jabravoe\Documents\project_robotframework1\cargadatosexcel\test\testsuite\registrosdatos.robot">
 <test id="s1-t1" name="Prueba registro" line="14">
 <kw name="Abrir Navegador web" owner="navegadortasks">
 <kw name="Cargar home" owner="navegadoractions">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:48.050977" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg time="2025-08-02T23:53:59.727163" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
 <arg>${urlPage}</arg>
 <arg>${chrome}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-27T18:53:48.050977" elapsed="9.614554"/>
+<status status="PASS" start="2025-08-02T23:53:59.727163" elapsed="5.363795"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.665531" elapsed="0.079893"/>
+<status status="PASS" start="2025-08-02T23:54:05.090958" elapsed="2.288266"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:53:48.050977" elapsed="9.694447"/>
+<status status="PASS" start="2025-08-02T23:53:59.725810" elapsed="7.653414"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:53:48.043473" elapsed="9.701951"/>
+<status status="PASS" start="2025-08-02T23:53:59.716255" elapsed="7.662969"/>
 </kw>
 <kw name="Formulario Registro" owner="formulariotasks">
 <kw name="Leer Excel" owner="frameworkproxi">
 <kw name="Open Workbook" owner="RPA.Excel.Files">
-<msg time="2025-07-27T18:53:57.874760" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001C43904A760&gt;</msg>
+<msg time="2025-08-02T23:54:07.521291" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x0000023B8F4E5910&gt;</msg>
 <arg>${excelFile}</arg>
 <doc>Open an existing Excel workbook.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.754465" elapsed="0.120295"/>
+<status status="PASS" start="2025-08-02T23:54:07.381281" elapsed="0.140010"/>
 </kw>
 <kw name="Read Worksheet" owner="RPA.Excel.Files">
-<msg time="2025-07-27T18:53:57.876760" level="INFO">@{rowData} = [ {'genero': 'F', 'nombre': 'Daniela', 'apellidos': 'Perez Gonzales', 'email': 'danielaperez@gmail.com', 'empresa': 'Siesa', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456} ]</msg>
+<msg time="2025-08-02T23:54:07.521291" level="INFO">@{rowData} = [ {'genero': 'F', 'nombre': 'Valentina', 'apellidos': False, 'email': 'valentina.ramirez01@gmail.com', 'empresa': 'Adidas', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456} | {'genero': 'M', 'nom...</msg>
 <var>@{rowData}</var>
 <arg>header=${TRUE}</arg>
 <arg>name=${name}</arg>
 <arg>start=${startRow}</arg>
 <doc>Read the content of a worksheet into a list of dictionaries.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.875760" elapsed="0.001000"/>
+<status status="PASS" start="2025-08-02T23:54:07.521291" elapsed="0.000000"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-07-27T18:53:57.877754" level="INFO">@{rowData} = [ {'genero': 'F', 'nombre': 'Daniela', 'apellidos': 'Perez Gonzales', 'email': 'danielaperez@gmail.com', 'empresa': 'Siesa', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456} ]</msg>
+<msg time="2025-08-02T23:54:07.521291" level="INFO">@{rowData} = [ {'genero': 'F', 'nombre': 'Valentina', 'apellidos': False, 'email': 'valentina.ramirez01@gmail.com', 'empresa': 'Adidas', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456} | {'genero': 'M', 'nom...</msg>
 <arg>@{rowData}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.876760" elapsed="0.000994"/>
+<status status="PASS" start="2025-08-02T23:54:07.521291" elapsed="0.000000"/>
 </kw>
 <kw name="Close Workbook" owner="RPA.Excel.Files">
-<msg time="2025-07-27T18:53:57.877754" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001C43904A760&gt;</msg>
+<msg time="2025-08-02T23:54:07.525075" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x0000023B8F4E5910&gt;</msg>
 <doc>Close the active workbook.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.877754" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-02T23:54:07.525075" elapsed="0.000000"/>
 </kw>
 <arg>${excelFile}</arg>
 <tag>Leyendo excel</tag>
 <doc>Lee los datos del excel y los convierte a un listado de diccionarios</doc>
-<status status="PASS" start="2025-07-27T18:53:57.750468" elapsed="0.127286"/>
+<status status="PASS" start="2025-08-02T23:54:07.381281" elapsed="0.143794"/>
 </kw>
 <kw name="Llenar registro" owner="formularioactions">
 <for flavor="IN">
@@ -58,171 +58,2027 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${element}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.878752" elapsed="0.000999"/>
+<status status="PASS" start="2025-08-02T23:54:07.525075" elapsed="0.002012"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:57.882757" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<msg time="2025-08-02T23:54:07.527087" level="INFO">Clicking element 'css:a.ico-register'.</msg>
 <arg>${btnRegister}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:57.880769" elapsed="0.561674"/>
+<status status="PASS" start="2025-08-02T23:54:07.527087" elapsed="0.747316"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${formRegister}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-27T18:53:58.442443" elapsed="0.071039"/>
+<status status="PASS" start="2025-08-02T23:54:08.274403" elapsed="0.097539"/>
 </kw>
 <if>
 <branch type="IF" condition="'${element}[genero]' == 'F'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:58.514482" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<msg time="2025-08-02T23:54:08.371942" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
 <arg>${rbGenderF}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:58.514482" elapsed="0.112827"/>
+<status status="PASS" start="2025-08-02T23:54:08.371942" elapsed="0.390032"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:53:58.513482" elapsed="0.113827"/>
+<status status="PASS" start="2025-08-02T23:54:08.371942" elapsed="0.390032"/>
 </branch>
 <branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${rbGenderM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-07-27T18:53:58.627309" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-02T23:54:08.761974" elapsed="0.002024"/>
 </kw>
-<status status="NOT RUN" start="2025-07-27T18:53:58.627309" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-02T23:54:08.761974" elapsed="0.002024"/>
 </branch>
-<status status="PASS" start="2025-07-27T18:53:58.513482" elapsed="0.113827"/>
+<status status="PASS" start="2025-08-02T23:54:08.371942" elapsed="0.392056"/>
 </if>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:58.628412" level="INFO">Typing text 'Daniela' into text field '//*[@id="FirstName"]'.</msg>
+<msg time="2025-08-02T23:54:08.765658" level="INFO">Typing text 'Valentina' into text field '//*[@id="FirstName"]'.</msg>
 <arg>${txtFName}</arg>
 <arg>${element}[nombre]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:58.627309" elapsed="0.106708"/>
+<status status="PASS" start="2025-08-02T23:54:08.763998" elapsed="0.484843"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:58.734017" level="INFO">Typing text 'Perez Gonzales' into text field '//*[@id="LastName"]'.</msg>
+<msg time="2025-08-02T23:54:09.318805" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
 <arg>${txtLName}</arg>
 <arg>${element}[apellidos]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:58.734017" elapsed="0.132482"/>
+<status status="PASS" start="2025-08-02T23:54:09.248841" elapsed="0.575253"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:58.866499" level="INFO">Typing text 'danielaperez@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<msg time="2025-08-02T23:54:09.824094" level="INFO">Typing text 'valentina.ramirez01@gmail.com' into text field '//*[@id="Email"]'.</msg>
 <arg>${txtEmail}</arg>
 <arg>${element}[email]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:58.866499" elapsed="0.149579"/>
+<status status="PASS" start="2025-08-02T23:54:09.824094" elapsed="0.731119"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:59.017075" level="INFO">Typing text 'Siesa' into text field '//*[@id="Company"]'.</msg>
+<msg time="2025-08-02T23:54:10.557220" level="INFO">Typing text 'Adidas' into text field '//*[@id="Company"]'.</msg>
 <arg>${txtCompany}</arg>
 <arg>${element}[empresa]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.016078" elapsed="0.113540"/>
+<status status="PASS" start="2025-08-02T23:54:10.555213" elapsed="0.458079"/>
 </kw>
 <if>
 <branch type="IF" condition="'${element}[newsletter]' == 'N'">
 <kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:59.130190" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<msg time="2025-08-02T23:54:11.013292" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
 <arg>${chkNewsLetter}</arg>
 <doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.130190" elapsed="0.083214"/>
+<status status="PASS" start="2025-08-02T23:54:11.013292" elapsed="0.543177"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:53:59.129618" elapsed="0.083786"/>
+<status status="PASS" start="2025-08-02T23:54:11.013292" elapsed="0.543177"/>
 </branch>
 <branch type="ELSE">
 <kw name="Select Checkbox" owner="SeleniumLibrary">
 <arg>${chkNewsLetter}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-07-27T18:53:59.213404" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-02T23:54:11.556469" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-07-27T18:53:59.213404" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-02T23:54:11.556469" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2025-07-27T18:53:59.129618" elapsed="0.083786"/>
+<status status="PASS" start="2025-08-02T23:54:11.013292" elapsed="0.543177"/>
 </if>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:59.213404" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
-<msg time="2025-07-27T18:53:59.263973" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-08-02T23:54:11.558478" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:54:11.784162" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${txtPass}</arg>
 <arg>${element}[pass]</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.213404" elapsed="0.101309"/>
+<status status="PASS" start="2025-08-02T23:54:11.556469" elapsed="0.764689"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:59.314713" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
-<msg time="2025-07-27T18:53:59.359996" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-08-02T23:54:12.323178" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:54:12.747309" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${txtConfPass}</arg>
 <arg>${element}[conPass]</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.314713" elapsed="0.118448"/>
+<status status="PASS" start="2025-08-02T23:54:12.321158" elapsed="0.867913"/>
 </kw>
 <kw name="Set Focus To Element" owner="SeleniumLibrary">
 <arg>${btnSaveRegister}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.433161" elapsed="0.033698"/>
+<status status="PASS" start="2025-08-02T23:54:13.189071" elapsed="0.172097"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-27T18:53:59.466859" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<msg time="2025-08-02T23:54:13.369380" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
 <arg>${btnSaveRegister}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-27T18:53:59.466859" elapsed="0.590866"/>
+<status status="PASS" start="2025-08-02T23:54:13.361168" elapsed="1.058436"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-27T18:54:05.059849" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-08-02T23:54:19.433048" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-27T18:54:00.058723" elapsed="5.001126"/>
+<status status="PASS" start="2025-08-02T23:54:14.419604" elapsed="5.013444"/>
 </kw>
-<var name="${element}">{'genero': 'F', 'nombre': 'Daniela', 'apellidos': 'Perez Gonzales', 'email': 'danielaperez@gmail.com', 'empresa': 'Siesa', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
-<status status="PASS" start="2025-07-27T18:53:57.878752" elapsed="7.181097"/>
-</iter>
-<var>${element}</var>
-<value>@{rowData}</value>
-<status status="PASS" start="2025-07-27T18:53:57.878752" elapsed="7.181097"/>
-</for>
-<status status="PASS" start="2025-07-27T18:53:57.877754" elapsed="7.182095"/>
-</kw>
-<arg>${datosRegister}</arg>
-<status status="PASS" start="2025-07-27T18:53:57.748428" elapsed="7.311421"/>
-</kw>
-<kw name="Validar registro" owner="validarregistros">
-<try>
-<branch type="TRY">
+<kw name="Log out" owner="formularioactions">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${msgVer}</arg>
+<arg>${BtnLogout}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-27T18:54:05.059849" elapsed="0.047431"/>
+<status status="PASS" start="2025-08-02T23:54:19.433048" elapsed="0.109917"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:54:05.059849" elapsed="0.047431"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:19.542965" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:19.542965" elapsed="1.584449"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:24.140906" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:21.127414" elapsed="3.013492"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:19.433048" elapsed="4.709867"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Valentina', 'apellidos': False, 'email': 'valentina.ramirez01@gmail.com', 'empresa': 'Adidas', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:54:07.525075" elapsed="16.617840"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:54:24.152531" elapsed="0.102035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:24.308988" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:24.254566" elapsed="1.508864"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:25.763430" elapsed="0.205735"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:25.970934" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:25.969165" elapsed="0.001769"/>
 </branch>
-<branch type="EXCEPT">
-<kw name="Fail" owner="BuiltIn">
-<arg>ERROR! NO SE GUARDÓ EL REGISTRO!</arg>
-<doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-07-27T18:54:05.107280" elapsed="0.000000"/>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:25.970934" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:25.970934" elapsed="0.572272"/>
 </kw>
-<status status="NOT RUN" start="2025-07-27T18:54:05.107280" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-02T23:54:25.970934" elapsed="0.572272"/>
 </branch>
-<status status="PASS" start="2025-07-27T18:54:05.059849" elapsed="0.047431"/>
-</try>
-<doc>Validando que el registro haya quedado guardado.</doc>
-<status status="PASS" start="2025-07-27T18:54:05.059849" elapsed="0.047431"/>
+<status status="PASS" start="2025-08-02T23:54:25.969165" elapsed="0.574041"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:26.545270" level="INFO">Typing text 'False' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:26.545270" elapsed="0.700177"/>
 </kw>
-<status status="PASS" start="2025-07-27T18:53:48.043473" elapsed="17.063807"/>
-</test>
-<status status="PASS" start="2025-07-27T18:53:41.173114" elapsed="23.934166"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat name="Registrosdatos" id="s1" pass="1" fail="0" skip="0">Registrosdatos</stat>
-</suite>
-</statistics>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:27.245447" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:27.245447" elapsed="1.053415"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:28.298862" level="INFO">Typing text 'sebastian.gomez91@hotmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:28.298862" elapsed="0.915947"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:29.219307" level="INFO">Typing text 'Nike' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:29.214809" elapsed="0.624262"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:29.839071" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:29.839071" elapsed="0.799822"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:29.839071" elapsed="0.799822"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:30.646332" elapsed="0.000593"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:30.638893" elapsed="0.008032"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:54:29.839071" elapsed="0.807854"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:30.646925" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:54:30.819028" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:30.646925" elapsed="0.997942"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:31.644867" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:54:31.788943" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:31.644867" elapsed="0.337702"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:31.982569" elapsed="0.099820"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:32.082389" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:32.082389" elapsed="0.971855"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:38.059136" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:33.054244" elapsed="5.006292"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:38.061122" elapsed="0.027689"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:38.089888" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:38.088811" elapsed="0.790919"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:41.886865" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:38.879730" elapsed="3.007135"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:38.061122" elapsed="3.825743"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': False, 'apellidos': False, 'email': 'sebastian.gomez91@hotmail.com', 'empresa': 'Nike', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:54:24.152531" elapsed="17.734334"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:54:41.886865" elapsed="0.002416"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:41.889281" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:41.889281" elapsed="0.377084"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.266365" elapsed="0.066188"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:42.332553" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.332553" elapsed="0.102798"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:42.332553" elapsed="0.102798"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:42.435351" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:42.435351" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:54:42.332553" elapsed="0.105743"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:42.438296" level="INFO">Typing text 'Juliana' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.438296" elapsed="0.138629"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:42.577455" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.576925" elapsed="0.130616"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:42.707541" level="INFO">Typing text 'juliana.mtz22@yahoo.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.707541" elapsed="0.191324"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:42.901456" level="INFO">Typing text 'CocaCola' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:42.898865" elapsed="0.190938"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:43.089803" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.089803" elapsed="0.151993"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:43.089803" elapsed="0.152500"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:43.242303" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:43.242303" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:54:43.089803" elapsed="0.152500"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:43.242303" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:54:43.288922" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.242303" elapsed="0.136774"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:43.379077" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:54:43.429254" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.379077" elapsed="0.146477"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.526569" elapsed="0.028151"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:43.555841" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.555045" elapsed="0.090475"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:48.654434" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:43.645520" elapsed="5.008914"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:48.654434" elapsed="0.034398"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:48.688832" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:48.688832" elapsed="0.727572"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:52.429853" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:49.417491" elapsed="3.013650"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:48.654434" elapsed="3.776707"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Juliana', 'apellidos': False, 'email': 'juliana.mtz22@yahoo.com', 'empresa': 'CocaCola', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:54:41.886865" elapsed="10.544276"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:54:52.434966" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:52.434966" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:52.434966" elapsed="0.519197"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:52.956173" elapsed="0.042887"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:52.999060" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:52.999060" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:52.999060" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:52.999060" elapsed="0.125394"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:52.999060" elapsed="0.125394"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:54:52.999060" elapsed="0.125394"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.126075" level="INFO">Typing text 'Carlos' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.124454" elapsed="0.160894"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.289252" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.285348" elapsed="0.129582"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.418849" level="INFO">Typing text 'carlos.pz.tech@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.414930" elapsed="0.184301"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.599231" level="INFO">Typing text 'Samsung' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.599231" elapsed="0.130002"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.730264" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.730264" elapsed="0.142568"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:53.729233" elapsed="0.143599"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:54:53.872832" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:54:53.872832" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:54:53.729233" elapsed="0.143599"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:53.872832" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:54:53.929005" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:53.872832" elapsed="0.166115"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:54.038947" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:54:54.099557" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:54.038947" elapsed="0.174086"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:54.213033" elapsed="0.027710"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:54.245153" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:54.240743" elapsed="0.610334"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:54:59.851722" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:54:54.851077" elapsed="5.000645"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:54:59.853752" elapsed="0.030635"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:54:59.886411" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:54:59.884387" elapsed="0.827870"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:03.722903" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:00.712257" elapsed="3.010646"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:54:59.851722" elapsed="3.871181"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': 'Carlos', 'apellidos': False, 'email': 'carlos.pz.tech@gmail.com', 'empresa': 'Samsung', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:54:52.434451" elapsed="11.288452"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:03.722903" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:03.722903" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:03.722903" elapsed="0.519150"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.242053" elapsed="0.032305"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:04.279099" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.279099" elapsed="0.114317"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:04.274358" elapsed="0.119058"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:04.399206" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:04.393416" elapsed="0.005790"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:04.274358" elapsed="0.124848"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:04.399206" level="INFO">Typing text 'Luisa' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.399206" elapsed="0.145577"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:04.545595" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.545595" elapsed="0.136486"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:04.682081" level="INFO">Typing text 'luisa.fernandez2025@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.682081" elapsed="0.189087"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:04.878949" level="INFO">Typing text 'Colanta' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:04.878949" elapsed="0.211058"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:05.094322" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:05.094322" elapsed="0.161177"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:05.093810" elapsed="0.161689"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:05.255499" elapsed="0.003807"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:05.255499" elapsed="0.003807"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:05.093810" elapsed="0.165496"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:05.259306" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:55:05.319963" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:05.259306" elapsed="0.174106"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:05.435817" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:55:05.488813" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:05.435817" elapsed="0.165632"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:05.601900" elapsed="0.029711"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:05.631611" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:05.631611" elapsed="0.991327"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:11.632903" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:06.623446" elapsed="5.009457"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:11.635064" elapsed="0.033003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:11.669088" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:11.669088" elapsed="0.813253"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:15.497041" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:12.482341" elapsed="3.014700"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:11.635064" elapsed="3.861977"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Luisa', 'apellidos': False, 'email': 'luisa.fernandez2025@gmail.com', 'empresa': 'Colanta', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:03.722903" elapsed="11.774138"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:15.497041" elapsed="0.002623"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:15.499664" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:15.499664" elapsed="0.549495"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.049159" elapsed="0.043868"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:16.094696" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:16.093663" elapsed="0.001033"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.094696" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.094696" elapsed="0.124358"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:16.094696" elapsed="0.124908"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:16.093663" elapsed="0.125941"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.221178" level="INFO">Typing text 'Juan' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.219604" elapsed="0.133732"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.353336" level="INFO">Typing text 'Moreno' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.353336" elapsed="0.149615"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.506469" level="INFO">Typing text 'juan.moreno.dev@hotmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.502951" elapsed="0.196086"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.699037" level="INFO">Typing text 'Sony' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.699037" elapsed="0.199876"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:16.909046" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:16.909046" elapsed="0.155304"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:16.898913" elapsed="0.165437"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:17.064350" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:17.064350" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:16.898913" elapsed="0.165437"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:17.064350" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:55:17.118941" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:17.064350" elapsed="0.166110"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:17.230460" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:55:17.290979" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:17.230460" elapsed="0.164779"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:17.395239" elapsed="0.034034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:17.429273" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:17.429273" elapsed="0.683712"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:23.113014" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:18.112985" elapsed="5.001131"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:23.117888" elapsed="0.034227"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:23.152115" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:23.152115" elapsed="0.817049"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:26.981519" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:23.969827" elapsed="3.012869"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:23.116905" elapsed="3.865791"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': 'Juan', 'apellidos': 'Moreno', 'email': 'juan.moreno.dev@hotmail.com', 'empresa': 'Sony', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:15.497041" elapsed="11.485655"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:26.987802" elapsed="0.001514"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:26.989316" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:26.989316" elapsed="0.461176"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:27.450492" elapsed="0.043978"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:27.494470" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:27.494470" elapsed="0.099640"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:27.494470" elapsed="0.099640"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:27.594110" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:27.594110" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:27.494470" elapsed="0.099640"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:27.594110" level="INFO">Typing text 'Laura' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:27.594110" elapsed="0.135804"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:27.729914" level="INFO">Typing text 'Torres' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:27.729914" elapsed="0.139076"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:27.872117" level="INFO">Typing text 'laura.torres21@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:27.868990" elapsed="0.171454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:28.043561" level="INFO">Typing text 'False' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.040444" elapsed="0.138524"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:28.185260" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.184816" elapsed="0.124410"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:28.178968" elapsed="0.130258"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:28.316269" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:28.309226" elapsed="0.007043"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:28.178968" elapsed="0.137301"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:28.317805" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:55:28.359279" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.317152" elapsed="0.133364"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:28.451624" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:55:28.500645" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.451624" elapsed="0.149119"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.600743" elapsed="0.089743"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:28.693001" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:28.690486" elapsed="0.619693"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:34.321685" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:29.310179" elapsed="5.013537"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:34.325116" elapsed="0.034082"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:34.359198" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:34.359198" elapsed="0.794016"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:38.156735" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:35.153214" elapsed="3.003521"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:34.325116" elapsed="3.839295"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Laura', 'apellidos': 'Torres', 'email': 'laura.torres21@gmail.com', 'empresa': False, 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:26.985426" elapsed="11.178985"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.166626" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:38.169181" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.166626" elapsed="0.535440"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.702066" elapsed="0.027376"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:38.729442" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.729442" elapsed="0.104037"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:38.729442" elapsed="0.104037"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:38.835017" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:38.833479" elapsed="0.001538"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:38.729442" elapsed="0.105575"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:38.835017" level="INFO">Typing text 'Manuela' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.835017" elapsed="0.145637"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:38.980654" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:38.980654" elapsed="0.143331"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.126242" level="INFO">Typing text 'manuela.gtz@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.123985" elapsed="0.154973"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.278958" level="INFO">Typing text 'Tigo' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.278958" elapsed="0.119930"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.398888" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.398888" elapsed="0.130009"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:39.398888" elapsed="0.130009"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:39.528897" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:39.528897" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:39.398888" elapsed="0.130009"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.528897" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:55:39.573970" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.528897" elapsed="0.130522"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.661046" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:55:39.715760" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.659419" elapsed="0.144313"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.803732" elapsed="0.028251"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:39.833248" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.832737" elapsed="0.088057"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:44.925152" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:39.920794" elapsed="5.004358"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:44.926808" elapsed="0.036885"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:44.963693" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:44.963693" elapsed="0.760099"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:48.730306" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:45.724303" elapsed="3.006003"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:44.925152" elapsed="3.805154"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Manuela', 'apellidos': False, 'email': 'manuela.gtz@gmail.com', 'empresa': 'Tigo', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:38.166626" elapsed="10.563680"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:48.733921" elapsed="0.001707"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:48.735628" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:48.735628" elapsed="0.590050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.326324" elapsed="0.047696"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:49.376044" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.374020" elapsed="0.115067"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:49.374020" elapsed="0.115067"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:49.489087" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:49.489087" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:49.374020" elapsed="0.115067"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:49.493065" level="INFO">Typing text 'Mariana' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.493065" elapsed="0.144512"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:49.639124" level="INFO">Typing text 'Herrera' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.637577" elapsed="0.131387"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:49.768964" level="INFO">Typing text 'mariana.hrr13@hotmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.768964" elapsed="0.179571"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:49.949224" level="INFO">Typing text 'Enel' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:49.949224" elapsed="0.119970"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:50.069194" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.069194" elapsed="0.124622"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:50.069194" elapsed="0.124622"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:50.195644" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:50.195644" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:50.069194" elapsed="0.126450"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:50.195644" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:55:50.238866" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.195644" elapsed="0.124775"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:50.329028" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:55:50.370269" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.320419" elapsed="0.198603"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.527020" elapsed="0.056096"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:50.583951" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.583116" elapsed="0.090214"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:55.679093" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:50.673330" elapsed="5.007894"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:55.681224" elapsed="0.030830"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:55.716886" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:55.716886" elapsed="0.725991"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:55:59.450149" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:55:56.442877" elapsed="3.007272"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:55.681224" elapsed="3.768925"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Mariana', 'apellidos': 'Herrera', 'email': 'mariana.hrr13@hotmail.com', 'empresa': 'Enel', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:48.731485" elapsed="10.718664"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:55:59.450149" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:59.450149" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:59.450149" elapsed="0.504737"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:55:59.954886" elapsed="0.036944"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:55:59.996462" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:55:59.991830" elapsed="0.004632"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:55:59.996462" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:55:59.996462" elapsed="0.122866"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:55:59.996462" elapsed="0.122866"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:55:59.991830" elapsed="0.127498"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.119328" level="INFO">Typing text 'Mateo' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.119328" elapsed="0.139604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.258932" level="INFO">Typing text 'False' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.258932" elapsed="0.140078"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.399010" level="INFO">Typing text 'mateo.castano89@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.399010" elapsed="0.179783"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.578793" level="INFO">Typing text 'PepsiCo' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.578793" elapsed="0.151231"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.732121" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.730024" elapsed="0.134435"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:00.730024" elapsed="0.134951"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:00.864975" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:00.864975" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:00.730024" elapsed="0.134951"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.866995" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:56:00.909114" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.864975" elapsed="0.134091"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:00.999066" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:56:01.039597" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:00.999066" elapsed="0.125415"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:01.124481" elapsed="0.024393"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:01.148874" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:01.148874" elapsed="0.080185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:06.235170" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:01.229059" elapsed="5.006111"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:06.237200" elapsed="0.032089"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:06.274188" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:06.273673" elapsed="0.705654"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:09.981271" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:06.979327" elapsed="3.001944"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:06.237200" elapsed="3.745158"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': 'Mateo', 'apellidos': False, 'email': 'mateo.castano89@gmail.com', 'empresa': 'PepsiCo', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:55:59.450149" elapsed="10.533138"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:56:09.983759" elapsed="0.002013"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:09.985772" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:09.985772" elapsed="0.556342"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:10.542114" elapsed="0.064994"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:10.609137" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:10.607108" elapsed="0.121976"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:10.607108" elapsed="0.121976"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:10.731471" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:10.729084" elapsed="0.002387"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:10.607108" elapsed="0.124363"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:10.732783" level="INFO">Typing text 'Natalia' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:10.732233" elapsed="0.153370"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:10.885603" level="INFO">Typing text 'Cano' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:10.885603" elapsed="0.135581"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.021699" level="INFO">Typing text 'natalia.cano77@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.021699" elapsed="0.176488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.199193" level="INFO">Typing text 'Avianca' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.199193" elapsed="0.135642"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.336019" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.336019" elapsed="0.123406"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:11.334835" elapsed="0.124590"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:11.464094" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:11.463661" elapsed="0.000857"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:11.334835" elapsed="0.129683"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.465394" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:56:11.511696" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.464518" elapsed="0.134713"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.599231" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:56:11.649082" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.599231" elapsed="0.139927"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.739158" elapsed="0.025804"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:11.765784" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:11.765784" elapsed="0.733301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:17.501680" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:12.501174" elapsed="5.000506"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:17.505029" elapsed="0.035242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:17.540271" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:17.540271" elapsed="1.071358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:21.630911" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:18.611629" elapsed="3.019282"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:17.504217" elapsed="4.126694"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Natalia', 'apellidos': 'Cano', 'email': 'natalia.cano77@gmail.com', 'empresa': 'Avianca', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:56:09.983759" elapsed="11.647152"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:56:21.633438" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:21.633438" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:21.633438" elapsed="0.514154"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.149214" elapsed="0.032144"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:22.190283" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:22.189597" elapsed="0.000686"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.190283" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.190283" elapsed="0.109081"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:22.190283" elapsed="0.109081"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:22.189597" elapsed="0.109767"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.299364" level="INFO">Typing text 'False' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.299364" elapsed="0.149505"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.448869" level="INFO">Typing text 'Rivera' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.448869" elapsed="0.143559"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.592428" level="INFO">Typing text 'tomas.rivera55@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.592428" elapsed="0.186712"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.779140" level="INFO">Typing text 'Huawei' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.779140" elapsed="0.130149"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:22.909289" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:22.909289" elapsed="0.131955"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:22.909289" elapsed="0.131955"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:23.041244" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:23.041244" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:22.909289" elapsed="0.131955"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:23.041244" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:56:23.088955" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:23.041244" elapsed="0.140346"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:23.187834" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:56:23.231039" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:23.181590" elapsed="0.141894"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:23.323484" elapsed="0.026624"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:23.351658" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:23.351658" elapsed="0.082828"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:28.436754" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:23.434486" elapsed="5.002268"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:28.436754" elapsed="0.046617"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:28.485140" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:28.485140" elapsed="0.711721"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:32.200078" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:29.196861" elapsed="3.003217"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:28.436754" elapsed="3.763324"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': False, 'apellidos': 'Rivera', 'email': 'tomas.rivera55@gmail.com', 'empresa': 'Huawei', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:56:21.632925" elapsed="10.567153"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:56:32.204620" elapsed="0.003283"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:32.207903" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:32.207903" elapsed="0.525979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:32.739176" elapsed="0.246572"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:32.986691" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:32.986691" elapsed="0.468743"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:32.986098" elapsed="0.469336"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:33.455434" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:33.455434" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:32.986098" elapsed="0.469336"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:33.459035" level="INFO">Typing text 'Paula' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:33.458418" elapsed="0.156336"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:33.614754" level="INFO">Typing text 'Ortega' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:33.614754" elapsed="0.134133"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:33.748887" level="INFO">Typing text 'paula.ortega01@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:33.748887" elapsed="0.185632"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:33.934519" level="INFO">Typing text 'Ecopetrol' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:33.934519" elapsed="0.134822"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:34.069341" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:34.069341" elapsed="0.131168"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:34.069341" elapsed="0.131168"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:34.200509" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:34.200509" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:34.069341" elapsed="0.131168"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:34.200509" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:56:34.249049" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:34.200509" elapsed="0.131155"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:34.331664" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:56:34.378909" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:34.331664" elapsed="0.137505"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:34.469169" elapsed="0.024100"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:34.493269" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:34.493269" elapsed="0.811678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:40.321008" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:35.306961" elapsed="5.015000"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:40.323607" elapsed="0.031303"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:40.355426" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:40.355426" elapsed="0.841499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:44.202870" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:41.198185" elapsed="3.007487"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:40.322742" elapsed="3.882930"/>
+</kw>
+<var name="${element}">{'genero': 'F', 'nombre': 'Paula', 'apellidos': 'Ortega', 'email': 'paula.ortega01@gmail.com', 'empresa': 'Ecopetrol', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:56:32.204620" elapsed="12.001052"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:56:44.208195" elapsed="0.003066"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:44.214720" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:44.212189" elapsed="0.481725"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:44.699694" elapsed="0.045191"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${rbGenderF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:44.745485" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:44.744885" elapsed="0.000600"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}[genero]' == 'M'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:44.746330" level="INFO">Clicking element '//*[@id="gender-male"]'.</msg>
+<arg>${rbGenderM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:44.746330" elapsed="0.102713"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:44.745485" elapsed="0.103558"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:44.744885" elapsed="0.104158"/>
+</if>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:44.849043" level="INFO">Typing text 'Santiago' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${txtFName}</arg>
+<arg>${element}[nombre]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:44.849043" elapsed="0.155419"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.004462" level="INFO">Typing text 'Salazar' into text field '//*[@id="LastName"]'.</msg>
+<arg>${txtLName}</arg>
+<arg>${element}[apellidos]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.004462" elapsed="0.154746"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.159208" level="INFO">Typing text 'santiago.salazar.dev@hotmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${txtEmail}</arg>
+<arg>${element}[email]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.159208" elapsed="0.279758"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.438966" level="INFO">Typing text 'Mercadolibre' into text field '//*[@id="Company"]'.</msg>
+<arg>${txtCompany}</arg>
+<arg>${element}[empresa]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.438966" elapsed="0.195112"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[newsletter]' == 'N'">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.636249" level="INFO">Unselecting checkbox '//*[@id="Newsletter"]'.</msg>
+<arg>${chkNewsLetter}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.636249" elapsed="0.135250"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:45.635725" elapsed="0.135774"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${chkNewsLetter}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-02T23:56:45.772144" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-02T23:56:45.771499" elapsed="0.000645"/>
+</branch>
+<status status="PASS" start="2025-08-02T23:56:45.634078" elapsed="0.138066"/>
+</if>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.772144" level="INFO">Typing password into text field '//*[@id="Password"]'.</msg>
+<msg time="2025-08-02T23:56:45.822239" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtPass}</arg>
+<arg>${element}[pass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.772144" elapsed="0.145624"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:45.919088" level="INFO">Typing password into text field '//*[@id="ConfirmPassword"]'.</msg>
+<msg time="2025-08-02T23:56:46.039323" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${txtConfPass}</arg>
+<arg>${element}[conPass]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:45.919088" elapsed="0.220006"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${btnSaveRegister}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:46.140185" elapsed="0.051120"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:46.201209" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<arg>${btnSaveRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:46.199332" elapsed="0.584748"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:51.792179" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:46.784588" elapsed="5.007591"/>
+</kw>
+<kw name="Log out" owner="formularioactions">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BtnLogout}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:51.792179" elapsed="0.039368"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:51.833091" level="INFO">Clicking element 'css:a.ico-logout'.</msg>
+<arg>${BtnLogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:51.832578" elapsed="0.816913"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T23:56:55.666729" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T23:56:52.649491" elapsed="3.017238"/>
+</kw>
+<status status="PASS" start="2025-08-02T23:56:51.792179" elapsed="3.876582"/>
+</kw>
+<var name="${element}">{'genero': 'M', 'nombre': 'Santiago', 'apellidos': 'Salazar', 'email': 'santiago.salazar.dev@hotmail.com', 'empresa': 'Mercadolibre', 'newsletter': 'N', 'pass': 123456, 'conPass': 123456}</var>
+<status status="PASS" start="2025-08-02T23:56:44.205672" elapsed="11.463604"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-02T23:56:55.669276" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:55.669276" level="INFO">Clicking element 'css:a.ico-register'.</msg>
+<arg>${btnRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T23:56:55.669276" elapsed="0.614102"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${formRegister}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T23:56:56.283378" elapsed="0.040580"/>
+</kw>
+<if>
+<branch type="IF" condition="'${element}[genero]' == 'F'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T23:56:56.323958" level="INFO">Clicking element '//*[@id="gender-female"]'.</msg>
 <errors>
+<msg time="2025-08-02T23:58:55.207943" level="ERROR">Execution stopped by user.</msg>
 </errors>
 </robot>
